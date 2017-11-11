@@ -1,12 +1,12 @@
 {
-    "name": "cesium-starter-app",
-    "version": "1.5.0",
-    "description": "A simple JavaScript starter app for creating apps with Cesium, the open-source WebGL virtual globe and map engine.",
-    "homepage": "http://cesiumjs.org",
-    "license": "Apache-2.0",
+    "name": "WebScenerioControVR",
+    "version": "",
+    "description": "Enter desription here",
+    "homepage": "",
+    "license": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pjcozzi/cesium-starter-app"
+        "url": "https://github.com/holylandman/cesium-starter-app"
     },
     "dependencies": {
         "express": "~4.9.x",
