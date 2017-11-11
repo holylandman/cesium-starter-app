@@ -9,8 +9,6 @@ This Is VRcontrol project by Saar Eliad and Inbar Kaslasi :)
 
 **Cesium version**: [1.39](http://cesiumjs.org/downloads.html).
 
-Once you are up and running, copy and paste code examples from [Cesium Sandcastle](http://cesiumjs.org/Cesium/Apps/Sandcastle/index.html).
-
 Local server
 ------------
 
@@ -80,31 +78,18 @@ Updating Cesium
 
 The built Cesium source is in [ThirdParty/Cesium/](ThirdParty/Cesium/).  
 We may want to sync this up with the master branch in the [Cesium repo](https://github.com/AnalyticalGraphicsInc/cesium) once in a while. 
-```
-cd cesium
-git pull
-git checkout -b 1.0-starter 1.0
 
-./Tools/apache-ant-1.8.2/bin/ant clean combine
-rm -rf ../cesium-starter-app/ThirdParty/Cesium/*
-cp -R Build/Cesium/* ../cesium-starter-app/ThirdParty/Cesium/
-git checkout master
-git branch -d 1.0-starter
-```
-Then update the version in [package.json](package.json) and at the top of this README.md.
+Then update the version at the top of this README.md.
 
 Test the starter app in case any changes are needed to [index.html](index.html) or [App.js](Source/App.js).
 
-This uses the unminified version of Cesium.js, which is great for debugging but is quite large for production deployments.  To use the minified version, run `ant` with `minify` instead of `combine` before updating `cesium-starter-app`:
-```
-./Tools/apache-ant-1.8.2/bin/ant clean minify
+This uses the unminified version of Cesium.js, which is great for debugging but is quite large for production deployments.  To use the minified version, see Cesium's guide.
 ```
 The [Cesium Contributor's Guide](https://github.com/AnalyticalGraphicsInc/cesium/wiki/Contributor's-Guide) has more info on Cesium build options.
 
 Cesium resources
 ----------------
-
-* [Forum](http://cesium.agi.com/forum.html)
-* [Tutorials](http://cesium.agi.com/tutorials.html)
-* [Sandcastle](http://cesium.agi.com/Cesium/Apps/Sandcastle/index.html) - lots of examples to copy and paste.
-* [Reference Documentation](http://cesium.agi.com/refdoc.html)
+* [Forum](https://cesiumjs.org/forum/)
+* [Tutorials](https://cesiumjs.org/tutorials/)
+* [Sandcastle](https://cesiumjs.org/Cesium/Apps/Sandcastle/) - lots of examples to copy and paste.
+* [Reference Documentation](https://cesiumjs.org/Cesium/Build/Documentation/index.html)
